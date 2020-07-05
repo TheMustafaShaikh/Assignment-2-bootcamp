@@ -34,7 +34,7 @@ jobs:
       run: npm install -g surge
       
     - name: creating build  
-      run: npm run build  
+      run: npm run deploy  
      
     - name: deploying on surge
       run: surge ./build http://deeply-clover.surge.sh/ --token ${{secrets.SURGETOKEN}}
