@@ -30,6 +30,13 @@ jobs:
       with:
         version: 12 
     
+    - name: clearinng cache
+      run: npm cache clean
+
+    - name: deleting node_module
+      run: rm -rf node_modules
+     
+ 
     - name: installing npm
       run: npm install  
        
